@@ -21,9 +21,9 @@ class Footer extends Component {
             <ul className="social-links">{networks}</ul>
 
             <ul className="copyright">
-              <li>&copy; Copyright 2017 Tim Baker</li>
+              <li>&copy; Copyright 2020 Marta Jankowska</li>
               <li>
-                Design by
+                Reproduced and adapted from 
                 <a title="Styleshout" href="http://www.styleshout.com/">
                   Styleshout
                 </a>
