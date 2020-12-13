@@ -15,19 +15,19 @@ class Contact extends Component {
 
     return (
       <section id="contact">
-        <div className="row section-head">
-          <div className="two columns header-col">
-            <img src="https://res.cloudinary.com/martajank/image/upload/v1607865424/vippng.com-forma-png-1943842_roa3kz.png" />
+        <div >
+          <div >
+            <img className="icon" alt="envelope" src="https://res.cloudinary.com/martajank/image/upload/v1607865424/vippng.com-forma-png-1943842_roa3kz.png" />
           </div>
 
-          <div className="ten columns">
+          {/* <div className="ten columns">
             <p className="lead">{message}</p>
-          </div>
+          </div> */}
         </div>
 
-        <div className="row">
-          <div className="eight columns">
-            <form action="" method="post" id="contactForm" name="contactForm">
+        <div >
+          <div >
+            {/* <form action="" method="post" id="contactForm" name="contactForm">
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
@@ -88,25 +88,28 @@ class Contact extends Component {
                   </span>
                 </div>
               </fieldset>
-            </form>
+            </form> */}
 
-            <div id="message-warning">Error boy</div>
+            {/* <div id="message-warning">Error boy</div>
             <div id="message-success">
               Your message was sent, thank you!
               <br />
-            </div>
+            </div> */}
           </div>
 
-          <aside className="four columns footer-widgets">
-            <div className="widget widget_contact">
+          <aside className="address-section">
+            <div >
+            <br />
               <h4>Address and Phone</h4>
-              <p className="address">
+              <p >
+              <br />
                 {name}
                 <br />
-                {street} <br />
                 {city}, {state} {zip}
                 <br />
                 <span>{phone}</span>
+                <br />
+                <span>{email}</span>
               </p>
             </div>
           </aside>

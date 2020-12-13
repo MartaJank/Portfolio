@@ -24,7 +24,7 @@ class Testimonials extends Component {
             <div className="two columns header-col">
               
 
-                <img src="https://res.cloudinary.com/martajank/image/upload/v1607864397/32371_znsruf.png" />
+                <img className="icon" alt="quotation-marks" src="https://res.cloudinary.com/martajank/image/upload/v1607864397/32371_znsruf.png" />
             
                 
              

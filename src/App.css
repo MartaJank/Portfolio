@@ -1389,6 +1389,22 @@ call-to-action .button {
 #testimonials blockquote cite a,
 #testimonials blockquote cite a:visited { color: #8B9798; border: none }
 
+#contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  display: flex;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.address-section {
+  display: flex;
+  margin: 0;
+}
+
 /* Flex Slider
 /* ------------------------------------------------------------------ */
 
