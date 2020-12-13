@@ -17,9 +17,7 @@ class Contact extends Component {
       <section id="contact">
         <div className="row section-head">
           <div className="two columns header-col">
-            <h1>
-              <span>Get In Touch.</span>
-            </h1>
+            <img src="https://res.cloudinary.com/martajank/image/upload/v1607865424/vippng.com-forma-png-1943842_roa3kz.png" />
           </div>
 
           <div className="ten columns">
@@ -86,15 +84,15 @@ class Contact extends Component {
                 <div>
                   <button className="submit">Submit</button>
                   <span id="image-loader">
-                    <img alt="" src="images/loader.gif" />
+                    <img alt="loader" src="images/loader.gif" />
                   </span>
                 </div>
               </fieldset>
             </form>
 
-            <div id="message-warning"> Error boy</div>
+            <div id="message-warning">Error boy</div>
             <div id="message-success">
-              <i className="fa fa-check"></i>Your message was sent, thank you!
+              Your message was sent, thank you!
               <br />
             </div>
           </div>

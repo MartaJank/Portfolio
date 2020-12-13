@@ -2213,7 +2213,7 @@ img.mfp-img {
 #nav-wrap:target > ul#nav	{
    display: block;
     padding: 30px 20px 48px 20px;
-    background: #000;
+    background: #1f2024;
     margin: 0 30px;
     clear: both;
  }

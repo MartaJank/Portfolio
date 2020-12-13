@@ -22,9 +22,12 @@ class Testimonials extends Component {
         <div className="text-container">
           <div className="row">
             <div className="two columns header-col">
-              <h1>
-                <span>Client Testimonials</span>
-              </h1>
+              
+
+                <img src="https://res.cloudinary.com/martajank/image/upload/v1607864397/32371_znsruf.png" />
+            
+                
+             
             </div>
 
             <div className="ten columns flex-container">

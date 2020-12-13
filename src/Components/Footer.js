@@ -32,7 +32,7 @@ class Footer extends Component {
           </div>
           <div id="go-top">
             <a className="smoothscroll" title="Back to Top" href="#home">
-              <i className="icon-up-open"></i>
+              <img alt="go to top" src="https://res.cloudinary.com/martajank/image/upload/v1607859598/arrow-up-01-512_zyabyw.png"/>
             </a>
           </div>
         </div>
