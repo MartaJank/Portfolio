@@ -9,7 +9,7 @@
     "email": "martajan218@gmail.com",
     "phone": "+34 688 315 903",
     "address": {
-      "city": "Barcelona",
+      "city": "Terrassa (Barcelona)",
       "state": "Spain",
       "zip": "08221"
     },
@@ -28,7 +28,6 @@
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
         "school": "Ironhack",
@@ -92,21 +91,21 @@
     "projects": [
       {
         "title": "Readshelf",
-        "category": "",
-        "image": "",
-        "url": ""
+        "category": "An app to search for books, store them in your lists and join and create book clubs (mobile only)",
+        "image": "https://res.cloudinary.com/martajank/image/upload/v1607856829/RS_laeiwh.png",
+        "url": "https://readshelf-server.herokuapp.com/"
       },
       {
         "title": "Why So Serial?",
-        "category": "",
-        "image": "",
-        "url": ""
+        "category": "Serial Killers site to search for info as well as store and create new files",
+        "image": "https://res.cloudinary.com/martajank/image/upload/v1607856829/WSS_fxjygl.png",
+        "url": "https://why-so-serial.herokuapp.com/"
       },
       {
         "title": "Track Tracker",
-        "category": "",
-        "image": "",
-        "url": ""
+        "category": "Music suggestion app that throws you 4 random songs of the genre you choose",
+        "image": "https://res.cloudinary.com/martajank/image/upload/v1607856830/TT_pw7me7.png",
+        "url": "https://martajank.github.io/track-tracker-m1-project/index.html"
       }
     ]
   },

@@ -23,9 +23,9 @@ class Footer extends Component {
             <ul className="copyright">
               <li>&copy; Copyright 2020 Marta Jankowska</li>
               <li>
-                Reproduced and adapted from 
+                Reproduced and adapted from&nbsp;
                 <a title="Styleshout" href="http://www.styleshout.com/">
-                  Styleshout
+                   Styleshout
                 </a>
               </li>
             </ul>
