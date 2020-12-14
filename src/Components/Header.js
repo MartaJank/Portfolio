@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 class Header extends Component {
   render() {
@@ -7,15 +9,6 @@ class Header extends Component {
       var occupation = this.props.data.occupation;
       var description = this.props.data.description;
       var city = this.props.data.address.city;
-      var networks = this.props.data.social.map(function (network) {
-        return (
-          <li key={network.name}>
-            <a href={network.url}>
-              <i className={network.className}></i>
-            </a>
-          </li>
-        );
-      });
     }
 
     return (
@@ -69,15 +62,18 @@ class Header extends Component {
               I'm a {city} based <span>{occupation}</span>. {description}.
             </h3>
             <hr />
-            <ul className="social">{networks}</ul>
+
+            <a href="https://github.com/MartaJank " target="_blank">
+              <FontAwesomeIcon icon={faGithub} className="header-icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/marta--jankowska/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="header-icon" />
+            </a>
           </div>
         </div>
-
-        <p className="scrolldown">
-          <a className="smoothscroll" href="#about">
-            <i className="icon-down-circle"></i>
-          </a>
-        </p>
       </header>
     );
   }

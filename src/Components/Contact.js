@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 class Contact extends Component {
   render() {
@@ -17,8 +19,9 @@ class Contact extends Component {
       <section id="contact">
         <div >
           <div >
-            <a href="mailto:martajan218@gmail.com">
-            <img className="icon" alt="envelope" src="https://res.cloudinary.com/martajank/image/upload/v1607865424/vippng.com-forma-png-1943842_roa3kz.png" />
+            <a href="mailto:martajan218@gmail.com" target="_blank">
+            {/* <img className="icon" alt="envelope" src="https://res.cloudinary.com/martajank/image/upload/v1607865424/vippng.com-forma-png-1943842_roa3kz.png" /> */}
+            <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
             </a>
               
           </div>

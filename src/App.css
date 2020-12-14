@@ -879,6 +879,16 @@ header .scrolldown a:hover {
   color: #11abb0;
 }
 
+.header-icon {
+  font-size: 5rem;
+  color: #000;
+  margin: 0 2rem;
+}
+
+.header-icon:hover {
+  color: #11ABB0;
+}
+
 /**************** NAVBAR ********************/
 #nav-wrap ul,
 #nav-wrap li,
@@ -1394,10 +1404,20 @@ call-to-action .button {
   justify-content: space-around;
 }
 
-.icon {
+/* .icon {
   display: flex;
   height: 50px;
   margin-top: 50px;
+} */
+
+.contact-icon {
+  font-size: 7rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.contact-icon:hover {
+  color: #11ABB0;
 }
 
 .address-section {
