@@ -1,3 +1,4 @@
+import './Contact.css'
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +17,7 @@ const Contact = ({ data }) => {
     <section id="contact">
       <div>
         <div>
-          <a href="mailto:martajan218@gmail.com" target="_blank">
+          <a href="mailto:martajan218@gmail.com" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
           </a>
         </div>

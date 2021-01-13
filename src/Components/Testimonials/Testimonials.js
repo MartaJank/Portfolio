@@ -1,3 +1,4 @@
+import "./Testimonials.css";
 import React from "react";
 
 const Testimonials = ({ data }) => {

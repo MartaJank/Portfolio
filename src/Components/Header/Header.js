@@ -1,3 +1,4 @@
+import "./Header.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -58,12 +59,17 @@ const Header = ({ data }) => {
               </h3>
               <hr />
 
-              <a href="https://github.com/MartaJank " target="_blank">
+              <a
+                href="https://github.com/MartaJank "
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faGithub} className="header-icon" />
               </a>
               <a
                 href="https://www.linkedin.com/in/marta--jankowska/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="header-icon" />
               </a>

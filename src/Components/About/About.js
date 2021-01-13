@@ -1,3 +1,4 @@
+import "./About.css";
 import React from "react";
 
 const About = ({ data }) => {
@@ -30,7 +31,12 @@ const About = ({ data }) => {
                 </div>
                 <div className="columns download">
                   <p>
-                    <a href={data.resumeDownload} className="button">
+                    <a
+                      href={data.resumedownload}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="button"
+                    >
                       Download Resume
                     </a>
                   </p>
