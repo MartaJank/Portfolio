@@ -1,9 +1,35 @@
 import "./Header.css";
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+const items = [
+  { title: "Home" },
+  { title: "About" },
+  { title: "Resume" },
+  { title: "Portfolio" },
+  { title: "Contact" },
+];
+
 const Header = ({ data }) => {
+  const [currentIndex, setCurrentIndex] = useState(null);
+
+  const onCurrentSection = (index) => {
+    setCurrentIndex(index);
+  };
+
+  const renderedItems = items.map((item, index) => {
+    const current = index === currentIndex ? "current" : "";
+
+    return (
+      <li className={`${current}`} onClick={() => onCurrentSection(index)}>
+        <a className="smoothscroll" href={`#${item.title.toLowerCase()}`}>
+          {item.title}
+        </a>
+      </li>
+    );
+  });
+
   return (
     <>
       {data ? (
@@ -17,36 +43,7 @@ const Header = ({ data }) => {
             </a>
 
             <ul id="nav" className="nav">
-              <li className="current">
-                <a className="smoothscroll" href="#home">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#about">
-                  About
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#resume">
-                  Resume
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#portfolio">
-                  Works
-                </a>
-              </li>
-              {/* <li>
-            <a className="smoothscroll" href="#testimonials">
-              Testimonials
-            </a>
-          </li> */}
-              <li>
-                <a className="smoothscroll" href="#contact">
-                  Contact
-                </a>
-              </li>
+              {renderedItems}
             </ul>
           </nav>
 
