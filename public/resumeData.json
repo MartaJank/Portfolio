@@ -1,9 +1,9 @@
 {
   "main": {
     "name": "Marta Jankowska",
-    "occupation": "Full-stack Web Developer",
+    "occupation": "Front-end Web Developer",
     "description": "I have recently worked in Ironhack as a Teacher Assistant reviewing code, teaching and helping students using best practices when writing their code",
-    "image": "profilepic.jpg",
+    "image": "https://res.cloudinary.com/martajank/image/upload/v1610550002/profilepic_veryj8.jpg",
     "bio": "I am passionate about music, literature, crafting, travelling and languages. This last passion lead me to discover recently a new one, programming languages. I started to discover it when working in HP as a Project Manager since I was responsible of writing printer maintenances in HTML and CSS. After that, I realised I wanted to study coding and I enrolled in an Ironhack coding bootcamp. Once I finished, I had the opportunity to work as a Teacher Assistant in Ironhack, helping students understand code basics and also enhancing my own understanding of it by teaching. Currently I am searching for a job in web development to continue with this path I fell in love with.",
     "contactmessage": "If you're interested in my profile, don't hesitate to contact me! 😊",
     "email": "martajan218@gmail.com",
@@ -62,20 +62,24 @@
         "level": "80%"
       },
       {
-        "name": "ReactJs",
-        "level": "70%"
+        "name": "ReactJs (with Hooks)",
+        "level": "80%"
       },
       {
-        "name": "CSS",
-        "level": "90%"
+        "name": "Redux",
+        "level": "50%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "85%"
       },
       {
         "name": "HTML5",
         "level": "90%"
       },
       {
-        "name": "MongoDB",
-        "level": "85%"
+        "name": "CSS",
+        "level": "90%"
       },
       {
         "name": "SASS",
@@ -84,6 +88,10 @@
       {
         "name": "Styled Components",
         "level": "60%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "85%"
       }
     ]
   },

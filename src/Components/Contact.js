@@ -1,128 +1,48 @@
-import React, { Component } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-class Contact extends Component {
-  render() {
-    if (this.props.data) {
-      var name = this.props.data.name;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone = this.props.data.phone;
-      var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
-    }
-
-    return (
-      <section id="contact">
-        <div >
-          <div >
-            <a href="mailto:martajan218@gmail.com" target="_blank">
-            {/* <img className="icon" alt="envelope" src="https://res.cloudinary.com/martajank/image/upload/v1607865424/vippng.com-forma-png-1943842_roa3kz.png" /> */}
-            <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-            </a>
-              
-          </div>
-
-          {/* <div className="ten columns">
-            <p className="lead">{message}</p>
-          </div> */}
-        </div>
-
-        <div >
-          <div >
-            {/* <form action="" method="post" id="contactForm" name="contactForm">
-              <fieldset>
-                <div>
-                  <label htmlFor="contactName">
-                    Name <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactName"
-                    name="contactName"
-                    onChange={this.handleChange}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactEmail">
-                    Email <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactEmail"
-                    name="contactEmail"
-                    onChange={this.handleChange}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactSubject">Subject</label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactSubject"
-                    name="contactSubject"
-                    onChange={this.handleChange}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactMessage">
-                    Message <span className="required">*</span>
-                  </label>
-                  <textarea
-                    cols="50"
-                    rows="15"
-                    id="contactMessage"
-                    name="contactMessage"
-                  ></textarea>
-                </div>
-
-                <div>
-                  <button className="submit">Submit</button>
-                  <span id="image-loader">
-                    <img alt="loader" src="images/loader.gif" />
-                  </span>
-                </div>
-              </fieldset>
-            </form> */}
-
-            {/* <div id="message-warning">Error boy</div>
-            <div id="message-success">
-              Your message was sent, thank you!
-              <br />
-            </div> */}
-          </div>
-
-          <aside className="address-section">
-            <div >
-            <br />
-              <h4>Address and Phone</h4>
-              <p >
-              <br />
-                {name}
-                <br />
-                {city}, {state} {zip}
-                <br />
-                <span>{phone}</span>
-                <br />
-                <span>{email}</span>
-              </p>
-            </div>
-          </aside>
-        </div>
-      </section>
-    );
+const Contact = ({ data }) => {
+  if (data) {
+    var name = data.name;
+    var city = data.address.city;
+    var state = data.address.state;
+    var zip = data.address.zip;
+    var phone = data.phone;
+    var email = data.email;
   }
-}
+
+  return (
+    <section id="contact">
+      <div>
+        <div>
+          <a href="mailto:martajan218@gmail.com" target="_blank">
+            <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <aside className="address-section">
+          <div>
+            <br />
+            <h4>Address and Phone</h4>
+            <p>
+              <br />
+              {name}
+              <br />
+              {city}, {state} {zip}
+              <br />
+              <span>{phone}</span>
+              <br />
+              <span>{email}</span>
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  );
+};
 
 export default Contact;
+
